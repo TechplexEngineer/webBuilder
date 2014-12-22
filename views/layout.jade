@@ -6,22 +6,10 @@ head
 	meta(name='viewport', content='width=device-width, initial-scale=1')
 	meta(name='mobile-web-app-capable', content='yes')
 
-	//- link(rel='stylesheet', href='/libs/semantic/semantic.min.css')
-	link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.3.2/semantic.min.css')
 	link(href='//fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,vietnamese', rel='stylesheet', type='text/css')
 	link(rel='stylesheet', href='/css/style.css')
 
 body
-	.ui.page.grid
-		.computer.tablet.only.row
-			.ui.inverted.menu.navbar
-				a.brand.item(href='/', title=appslogan)=appname
-
-				a.active.item(href='') Link
-				a.item(href='') Link
-		div.row
-			div.column.padding-reset
-				block content
+	block content
 
 	script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
-	script(src='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.3.2/javascript/semantic.min.js')

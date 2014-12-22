@@ -1,0 +1,11 @@
+extends ../layout
+
+block content
+	h1 #{title}
+
+	h2 #{data.name}
+
+	form(method="post")
+		input(type="submit",value="Yes, Delete",name="action-delete")
+		| 
+		input(type="submit",value="No, Cancel",name="action-cancel")

@@ -1,0 +1,21 @@
+extends ../layout
+
+block content
+	h1 #{title}
+
+	h2 #{data.name}
+
+	form(method="post")
+		table
+			tr
+				td Name
+				td
+					input(type="text", name="name", value="#{data.name}")
+			tr
+				td Description
+				td
+					input(type="text", name="desc", value="#{data.desc}")
+			tr
+				td
+				td
+					input(type="submit",value="Save")

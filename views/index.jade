@@ -3,7 +3,7 @@ extends layout
 block content
 	h1 Welcome
 
-	div.ui.button.green Add New
+	a(href="/add") Add New
 
 	table.ui.celled.striped.table
 		thead
@@ -19,4 +19,8 @@ block content
 					td.
 						#{item.desc}
 					td
-						a.ui.button.red(href="/delete/#{item._id}") Delete
+						a(href="/delete/#{item._id}") Delete
+			else
+				tr
+					td(colspan="3")
+						| No items
