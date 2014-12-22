@@ -1,0 +1,22 @@
+extends layout
+
+block content
+	h1 Welcome
+
+	div.ui.button.green Add New
+
+	table.ui.celled.striped.table
+		thead
+			tr
+				th Name
+				th Description
+				th Actions
+		tbody
+			for item in data
+				tr
+					td
+						a(href="/edit/#{item._id}") #{item.name}
+					td.
+						#{item.desc}
+					td
+						a.ui.button.red(href="/delete/#{item._id}") Delete
