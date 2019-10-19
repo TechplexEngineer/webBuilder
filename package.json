@@ -16,8 +16,8 @@
     "express.io": "^1.1.13",
     "expressjs.routes.autoload": "^0.1.7",
     "jade": "^1.8.2",
-    "mongodb": "^1.4.25",
-    "monk": "^0.9.1",
+    "mongodb": "^3.1.13",
+    "monk": "^3.0.0",
     "morgan": "^1.5.0",
     "serve-favicon": "^2.2.0"
   }
